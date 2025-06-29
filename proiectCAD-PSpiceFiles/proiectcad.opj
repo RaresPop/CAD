@@ -1,0 +1,159 @@
+(ExpressProject "proiectCAD"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "24.1 S004 (4290201)  [4/17/2025]-[06/29/25]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\proiectcad.DSN"
+      (Type "Schematic Design")
+      (DisplayName ".\proiectcad.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (Sort User)
+    (File ".\PROIECTCAD_OUTPUT\BOM.SCH.CSV"
+      (Type "Report")
+      (DisplayName ".\PROIECTCAD_OUTPUT\BOM.SCH.CSV"))
+    (File ".\proiectcad-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net"
+      (Type "Report")
+      (DisplayName ".\proiectcad-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\proiectcad-PSpiceFiles\SCHEMATIC1\simualareac.sim"
+        (DisplayName "SCHEMATIC1-simualareac")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\proiectcad-PSpiceFiles\SCHEMATIC1\transient.sim"
+        (DisplayName "SCHEMATIC1-transient")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\proiectcad-PSpiceFiles\SCHEMATIC1\dc.sim"
+        (DisplayName "SCHEMATIC1-dc")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\proiectcad-pspicefiles\schematic1\transient.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (MPSSessionName "rares")
+  (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (TL072/301/TI
+      (FullPartName "TL072/301/TI.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
+      (DeviceIndex "1"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (D1N914
+      (FullPartName "D1N914.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (TIP127
+      (FullPartName "TIP127.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\DARLNGTN.OLB")
+      (DeviceIndex "0"))
+    (TIP122
+      (FullPartName "TIP122.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\DARLNGTN.OLB")
+      (DeviceIndex "0"))
+    (LM833/ON
+      (FullPartName "LM833/ON.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ON_AMP.OLB")
+      (DeviceIndex "0"))
+    (Q2N2907
+      (FullPartName "Q2N2907.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (Q2N2222
+      (FullPartName "Q2N2222.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\BIPOLAR.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (D1N4148
+      (FullPartName "D1N4148.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\DIODE.OLB")
+      (DeviceIndex "0"))
+    (POT
+      (FullPartName "POT.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-L
+      (LibraryName "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTBOTH-L
+      (LibraryName "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC_CIRCLE
+      (LibraryName "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\ORCADX_24.1\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 527"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1290 24 545")
+        (Scroll "0 159")
+        (Zoom "142")
+        (Occurrence "/"))
+      (Path "C:\USERS\RARES\ONEDRIVE\DESKTOP\PROIECTCAD.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\OrCADX_24.1\tools\capture\library\pspice"))
