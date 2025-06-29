@@ -1,0 +1,5 @@
+ lib=C:\Cadence\OrCADX_24.1\tools\PSpice\Library\diode.lib, offset=465129, size=237
+ lib=C:\Cadence\OrCADX_24.1\tools\PSpice\Library\tex_inst.lib, offset=84941, size=1158
+ lib=C:\Cadence\OrCADX_24.1\tools\PSpice\Library\breakout.lib, offset=8241, size=133
+ lib=C:\Cadence\OrCADX_24.1\tools\PSpice\Library\darlngtn.lib, offset=80146, size=1389
+ lib=C:\Cadence\OrCADX_24.1\tools\PSpice\Library\darlngtn.lib, offset=81536, size=1071

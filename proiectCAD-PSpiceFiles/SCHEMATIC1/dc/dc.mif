@@ -1,0 +1,5 @@
+ lib=C:\Cadence\OrCADX_24.1\tools\PSpice\Library\diode.lib, offset=19555, size=328
+ lib=C:\Cadence\OrCADX_24.1\tools\PSpice\Library\bipolar.lib, offset=13005, size=562
+ lib=C:\Cadence\OrCADX_24.1\tools\PSpice\Library\bipolar.lib, offset=102680, size=644
+ lib=C:\Cadence\OrCADX_24.1\tools\PSpice\Library\tex_inst.lib, offset=84941, size=1158
+ lib=C:\Cadence\OrCADX_24.1\tools\PSpice\Library\breakout.lib, offset=8241, size=133

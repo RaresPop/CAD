@@ -1,0 +1,340 @@
+
+**** 05/16/25 16:52:41 ***** PSpice 24.1.0 (17 April 2025) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simualareac"  [ c:\users\rares\appdata\roaming\spb_data\cdssetup\workspace\projects\proiectcad\proiectcad-ps
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "simualareac.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\rares\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\24.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 1G
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROIECTCAD
+V_V2         VCC 0 15
+V_V3         -VCC 0 -15
+V_V4         N00912 0  AC 1.15m
++SIN 0 1.15m 260 0 0 0
+X_U1B         N07633 N01990 VCC -VCC N02102 TL072/301/TI
+R_R3         0 N01990  1k TC=0,0 
+R_R4         N01990 N02102  49k TC=0,0 
+X_U2A         N02102 N02283 VCC -VCC N02357 TL072/301/TI
+R_R5         0 N02283  1k TC=0,0 
+R_R6         N02283 N02357  49k TC=0,0 
+X_U2B         N02357 N08767 VCC -VCC N03316 TL072/301/TI
+X_R12         N03520 N03520 N03316 POT PARAMS: SET=0 VALUE=10k
+R_R14         -VCC N04550  1k TC=0,0 
+R_R15         N04491 VCC  1k TC=0,0 
+R_R16         0 N04555  5 TC=0,0 
+D_D7         N03316 N04550 D1N4148 
+C_C1         N00912 N07274  10n  TC=0,0 
+R_R1         0 N07274 R_R1 61.9k TC=0,0 
+.model        R_R1 RES R=1 DEV=1% TC1=0 TC2=0
+X_U3A         N07274 N07398 VCC -VCC N07398 TL072/301/TI
+R_R2         N07398 N07518 R_R2 1.37k TC=0,0 
+.model        R_R2 RES R=1 DEV=1% TC1=0 TC2=0
+C_C2         0 N07518  10n  TC=0,0 
+X_U3B         N07518 N07633 VCC -VCC N07633 TL072/301/TI
+R_R17         N08767 N03520  1k TC=0,0 
+R_R18         0 N08767  1k TC=0,0 
+D_D6         N04491 N03316 D1N4148 
+Q_Q1         VCC N04491 N04555 Q2N2222
+Q_Q2         N04555 N04550 -VCC Q2N2907
+
+**** RESUMING simualareac.cir ****
+.END
+
+**** 05/16/25 16:52:41 ***** PSpice 24.1.0 (17 April 2025) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simualareac"  [ c:\users\rares\appdata\roaming\spb_data\cdssetup\workspace\projects\proiectcad\proiectcad-ps
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         X_U1B.DX        X_U2A.DX        X_U2B.DX        
+          IS    2.682000E-09  800.000000E-18  800.000000E-18  800.000000E-18 
+           N    1.836                                                        
+         ISR    1.565000E-09                                                 
+         IKF     .04417                                                      
+          BV  100                                                            
+         IBV  100.000000E-06                                                 
+          RS     .5664                                                       
+          TT   11.540000E-09                                                 
+         CJO    4.000000E-12                                                 
+          VJ     .5                                                          
+           M     .3333                                                       
+
+
+               X_U3A.DX        X_U3B.DX        
+          IS  800.000000E-18  800.000000E-18 
+
+
+**** 05/16/25 16:52:41 ***** PSpice 24.1.0 (17 April 2025) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simualareac"  [ c:\users\rares\appdata\roaming\spb_data\cdssetup\workspace\projects\proiectcad\proiectcad-ps
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         Q2N2907         
+               NPN             PNP             
+       LEVEL    1               1            
+          IS   14.340000E-15  650.600000E-18 
+          BF  255.9           231.7          
+          NF    1               1            
+         VAF   74.03          115.7          
+         IKF     .2847          1.079        
+         ISE   14.340000E-15   54.810000E-15 
+          NE    1.307           1.829        
+          BR    6.092           3.563        
+          NR    1               1            
+         ISS    0               0            
+          RB   10              10            
+          RE    0               0            
+          RC    1                .715        
+         CJE   22.010000E-12   19.820000E-12 
+         VJE     .75             .75         
+         MJE     .377            .3357       
+         CJC    7.306000E-12   14.760000E-12 
+         VJC     .75             .75         
+         MJC     .3416           .5383       
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          TF  411.100000E-12  603.700000E-12 
+         XTF    3               1.7          
+         VTF    1.7             5            
+         ITF     .6              .65         
+          TR   46.910000E-09  111.300000E-09 
+         XTB    1.5             1.5          
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 05/16/25 16:52:41 ***** PSpice 24.1.0 (17 April 2025) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simualareac"  [ c:\users\rares\appdata\roaming\spb_data\cdssetup\workspace\projects\proiectcad\proiectcad-ps
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1B.JX        X_U2A.JX        X_U2B.JX        X_U3A.JX        
+               PJF             PJF             PJF             PJF             
+         VTO   -1              -1              -1              -1            
+        BETA  270.100000E-06  270.100000E-06  270.100000E-06  270.100000E-06 
+          IS   15.000000E-12   15.000000E-12   15.000000E-12   15.000000E-12 
+
+
+               X_U3B.JX        
+               PJF             
+         VTO   -1            
+        BETA  270.100000E-06 
+          IS   15.000000E-12 
+
+
+**** 05/16/25 16:52:41 ***** PSpice 24.1.0 (17 April 2025) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simualareac"  [ c:\users\rares\appdata\roaming\spb_data\cdssetup\workspace\projects\proiectcad\proiectcad-ps
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               R_R1            R_R2            
+           R    1               1            
+
+
+**** 05/16/25 16:52:41 ***** PSpice 24.1.0 (17 April 2025) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simualareac"  [ c:\users\rares\appdata\roaming\spb_data\cdssetup\workspace\projects\proiectcad\proiectcad-ps
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)   15.0000  ( -VCC)  -15.0000  (N00912)    0.0000 (N01990) 30.05E-06     
+
+(N02102)     .0015 (N02283)     .0015 (N02357)     .0758 (N03316)     .1516     
+
+(N03520)     .1516 (N04491)     .8938 (N04550)    -.5905 (N04555)     .1575     
+
+(N07274)-2.789E-06 (N07398) 8.182E-06 (N07518) 8.120E-06 (N07633) 19.09E-06     
+
+(N08767)     .0758 (X_U1B.6)-214.4E-09                   (X_U1B.7)     .0015    
+
+(X_U1B.8)     .0015                   (X_U1B.9)    0.0000                       
+
+(X_U2A.6)-10.80E-06                   (X_U2A.7)     .0760                       
+
+(X_U2A.8)     .0760                   (X_U2A.9)    0.0000                       
+
+(X_U2B.6)-22.72E-06                   (X_U2B.7)     .1560                       
+
+(X_U2B.8)     .1560                   (X_U2B.9)    0.0000                       
+
+(X_U3A.6)-1.162E-09                   (X_U3A.7) 8.195E-06                       
+
+(X_U3A.8) 8.195E-06                   (X_U3A.9)    0.0000                       
+
+(X_U3B.6)-2.707E-09                   (X_U3B.7) 19.10E-06                       
+
+(X_U3B.8) 19.10E-06                   (X_U3B.9)    0.0000                       
+
+(X_U1B.10)    -.3986                  (X_U1B.11)  -14.6550                      
+
+(X_U1B.12)  -14.6550                  (X_U1B.53)   12.8000                      
+
+(X_U1B.54)  -12.8000                  (X_U1B.90) 30.14E-06                      
+
+(X_U1B.91)   25.0000                  (X_U1B.92)  -25.0000                      
+
+(X_U1B.99)    0.0000                  (X_U2A.10)    -.3971                      
+
+(X_U2A.11)  -14.6550                  (X_U2A.12)  -14.6550                      
+
+(X_U2A.53)   12.8000                  (X_U2A.54)  -12.8000                      
+
+(X_U2A.90)     .0015                  (X_U2A.91)   25.0000                      
+
+(X_U2A.92)  -25.0000                  (X_U2A.99)    0.0000                      
+
+(X_U2B.10)    -.3229                  (X_U2B.11)  -14.6550                      
+
+(X_U2B.12)  -14.6550                  (X_U2B.53)   12.8000                      
+
+(X_U2B.54)  -12.8000                  (X_U2B.90)     .0295                      
+
+(X_U2B.91)   25.0000                  (X_U2B.92)  -25.0000                      
+
+(X_U2B.99)    0.0000                  (X_U3A.10)    -.3986                      
+
+(X_U3A.11)  -14.6550                  (X_U3A.12)  -14.6550                      
+
+(X_U3A.53)   12.8000                  (X_U3A.54)  -12.8000                      
+
+(X_U3A.90) 90.11E-09                  (X_U3A.91)   25.0000                      
+
+(X_U3A.92)  -25.0000                  (X_U3A.99)    0.0000                      
+
+(X_U3B.10)    -.3986                  (X_U3B.11)  -14.6550                      
+
+(X_U3B.12)  -14.6550                  (X_U3B.53)   12.8000                      
+
+(X_U3B.54)  -12.8000                  (X_U3B.90) 87.97E-09                      
+
+(X_U3B.91)   25.0000                  (X_U3B.92)  -25.0000                      
+
+(X_U3B.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -1.187E-01
+    V_V3         8.719E-02
+    V_V4         0.000E+00
+    X_U1B.VB    -2.144E-12
+    X_U1B.VC     1.280E-11
+    X_U1B.VE     1.280E-11
+    X_U1B.VLIM   3.014E-08
+    X_U1B.VLP   -2.500E-11
+    X_U1B.VLN   -2.500E-11
+    X_U2A.VB    -1.080E-10
+    X_U2A.VC     1.273E-11
+    X_U2A.VE     1.288E-11
+    X_U2A.VLIM   1.516E-06
+    X_U2A.VLP   -2.500E-11
+    X_U2A.VLN   -2.500E-11
+    X_U2B.VB    -2.272E-10
+    X_U2B.VC     1.265E-11
+    X_U2B.VE     1.295E-11
+    X_U2B.VLIM   2.952E-05
+    X_U2B.VLP   -2.497E-11
+    X_U2B.VLN   -2.503E-11
+    X_U3A.VB    -1.162E-14
+    X_U3A.VC     1.280E-11
+    X_U3A.VE     1.280E-11
+    X_U3A.VLIM   9.011E-11
+    X_U3A.VLP   -2.500E-11
+    X_U3A.VLN   -2.500E-11
+    X_U3B.VB    -2.707E-14
+    X_U3B.VC     1.280E-11
+    X_U3B.VE     1.280E-11
+    X_U3B.VLIM   8.797E-11
+    X_U3B.VLP   -2.500E-11
+    X_U3B.VLN   -2.500E-11
+
+    TOTAL POWER DISSIPATION   3.09E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/16/25 16:52:41 ***** PSpice 24.1.0 (17 April 2025) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simualareac"  [ c:\users\rares\appdata\roaming\spb_data\cdssetup\workspace\projects\proiectcad\proiectcad-ps
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+
